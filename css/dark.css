@@ -1,5 +1,6 @@
 /*夜间适配*/
 .night .tip {
+    -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
 }
 
