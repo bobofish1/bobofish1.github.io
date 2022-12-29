@@ -187,3 +187,11 @@ if (localStorage.getItem('isDark') === '1') {
     document.body.classList.remove('DarkMode');
     $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')
 }
+
+$(document).ready(function(){
+    $('.vemoji-btn').text('😀');
+    $("#vcomments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+    })
+})
